@@ -1,6 +1,7 @@
 package cmds
 
 import (
+	"github.com/opcoder0/cveet/pkg/cve"
 	"github.com/spf13/cobra"
 )
 
@@ -18,6 +19,7 @@ func New() *cobra.Command {
 	syncCmd := &cobra.Command{
 		Use:   "sync",
 		Short: "Sync the local CVE database from CVEProject",
+		Run:   cve.Sync,
 	}
 
 	searchCmd := &cobra.Command{

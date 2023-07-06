@@ -1,4 +1,0 @@
-package cve
-
-func sync() {
-}
